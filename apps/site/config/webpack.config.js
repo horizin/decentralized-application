@@ -306,7 +306,7 @@ module.exports = function(webpackEnv) {
         // Layout
         layout: path.resolve(__dirname, '../src/layout'),
         regions: path.resolve(__dirname, '../src/layout/regions'),
-        screens: path.resolve(__dirname, '../src/layout/screens'),
+        routes: path.resolve(__dirname, '../src/layout/routes'),
         templates: path.resolve(__dirname, '../src/layout/templates'),
       },
       plugins: [

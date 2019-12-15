@@ -33,7 +33,7 @@ const menu = [
     to: '/dashboard',
   },
   {
-    label: 'Smart Contracts',
+    label: 'Contracts',
     to: '/dashboard/contracts',
   },
   {

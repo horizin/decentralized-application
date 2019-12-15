@@ -10,7 +10,7 @@ import './assets/App.css';
 import {Router} from '@reach/router';
 
 /* --- Local --- */
-import {Site, Dashboard} from 'screens';
+import {Site, Dashboard} from 'routes';
 import Providers from './providersWithLocation';
 
 /* --- Component --- */

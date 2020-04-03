@@ -3,14 +3,13 @@ import {Router} from '@reach/router';
 
 /* --- Local --- */
 import {Dashboard} from '@templates';
-import {Overview, Contracts, Users} from '@screens';
+import {Overview, Settings} from '@screens';
 
 const DashboardPage = props => (
   <Dashboard>
     <Router width="100%" primary={false}>
       <Overview path="/" />
-      <Contracts path="/contracts" />
-      <Users path="/users" />
+      <Settings path="/settings" />
     </Router>
   </Dashboard>
 );

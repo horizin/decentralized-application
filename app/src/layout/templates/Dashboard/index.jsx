@@ -1,4 +1,4 @@
-import {RegionAside, RegionTopDashboard, RegionFooter} from '@regions';
+import {RegionAside, RegionTop, RegionFooter} from '@regions';
 import styles from './styles';
 
 const DashboardTemplate = ({sx, sxMain, styled, children, ...props}) => {
@@ -7,7 +7,7 @@ const DashboardTemplate = ({sx, sxMain, styled, children, ...props}) => {
       <Atom.Flex sx={{flex: 1}}>
         <RegionAside sx={styles.aside} />
         <Atom.Flex column sx={styles.main}>
-          <RegionTopDashboard />
+          <RegionTop />
           <Atom.Flex column sx={{flex: 1, ...sxMain}}>
             {children}
           </Atom.Flex>

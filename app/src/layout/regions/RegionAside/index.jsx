@@ -1,4 +1,7 @@
-/* --- Component --- */
+/**
+ * @name RegionAside
+ * @description Aside region for the Dashboard template.
+ */
 const RegionAside = ({sx, ...props}) => {
   return (
     <Atom.Flex column sx={sx}>
@@ -6,11 +9,16 @@ const RegionAside = ({sx, ...props}) => {
         <Atom.Box>
           <Molecule.Link to="/">
             <Atom.Heading lg heavy sx={{mb: 0}}>
-              horizin
+              {GLOBAL.siteName}
             </Atom.Heading>
           </Molecule.Link>
         </Atom.Box>
       </Atom.Flex>
+      <Atom.Box gradient="gray" sx={{p: 3}}>
+        <Molecule.Link to="/dashboard/settings">
+          <Atom.Span sm>Settings</Atom.Span>
+        </Molecule.Link>
+      </Atom.Box>
       <Molecule.Menu
         items={menu}
         direction="column"
@@ -31,14 +39,6 @@ const menu = [
   {
     label: 'Overview',
     to: '/dashboard',
-  },
-  {
-    label: 'Contracts',
-    to: '/dashboard/contracts',
-  },
-  {
-    label: 'Users',
-    to: '/dashboard/users',
   },
 ];
 

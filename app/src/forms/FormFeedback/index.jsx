@@ -1,15 +1,13 @@
-/**
- * @name FormFeedback
- * @description Capture feedback from users.
- * @version 0.0.1
- */
-
 /* --- Global --- */
 import React, {useState} from 'react';
 import {PropTypes} from 'prop-types';
 import {useForm} from 'react-hook-form';
 
-/* --- Component --- */
+/**
+ * @name FormFeedback
+ * @description Capture feedback from users.
+ * @version 0.0.1
+ */
 const FormFeedback = ({styled, ...props}) => {
   /* --- Form Hook State --- */
   const {handleSubmit, register, errors} = useForm();

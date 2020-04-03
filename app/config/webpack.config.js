@@ -303,8 +303,8 @@ module.exports = function(webpackEnv) {
         '@theme': path.resolve(__dirname, '../src/assets/theme'),
         // Core : Interface
         '@components': path.resolve(__dirname, '../src/components'),
-        '@forms': path.resolve(__dirname, '../src/components/forms'),
         '@containers': path.resolve(__dirname, '../src/containers'),
+        '@forms': path.resolve(__dirname, '../src/forms'),
         // Template : Interface
         '@layout': path.resolve(__dirname, '../src/layout/'),
         '@regions': path.resolve(__dirname, '../src/layout/regions'),

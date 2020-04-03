@@ -1,20 +1,21 @@
 {
   "name": "decentralized-application",
-  "desription": "prototype decentralized applications",
+  "desription": "decentralized application boilerplate",
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "clean": "lerna clean",
-    "deploy": " lerna run deploy",
+    "deploy": "lerna run deploy",
     "watch": "lerna run --parallel watch",
     "start": "lerna run start"
   },
   "workspaces": {
     "package-entry": "main",
     "packages": [
-      "apps/*",
-      "packages/*"
+      "app",
+      "packages/*",
+      "packages/horizin/*"
     ],
     "nohoist": [
       "**/webpack-dev-server",
